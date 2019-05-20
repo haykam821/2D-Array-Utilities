@@ -1,15 +1,15 @@
-const funcs = require("./funcs/index.js");
+const funcs = require("./funcs");
 
 class TwoDimArray {
 	constructor(rows, columns, defaultValue) {
-		this.data = Array(rows).fill(Array(columns).fill(defaultValue));
+		this.data = new Array(rows).fill(new Array(columns).fill(defaultValue));
 	}
 }
 
 Object.entries(funcs).forEach(([ name, func ]) => {
-	TwoDimArray.prototype[name] = function(...args) {
-		return func(this.data, ...args);
+	TwoDimArray.prototype[name] = function(...arguments_) {
+		return func(this.data, ...arguments_);
 	};
 });
 
-module.exports = 2DArray;
+module.exports = TwoDimArray;
