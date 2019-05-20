@@ -6,7 +6,11 @@ class TwoDimArray {
 	}
 
 	static build(rows, columns, defaultValue) {
-		return new Array(rows).fill(new Array(columns).fill(defaultValue));
+		return new Array(rows).fill().map(() => {
+			return new Array(columns).fill().map(() => {
+				return defaultValue;
+			});
+		});
 	}
 }
 
