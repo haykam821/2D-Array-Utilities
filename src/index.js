@@ -1,8 +1,12 @@
 const funcs = require("./funcs");
 
 class TwoDimArray {
-	constructor(rows, columns, defaultValue) {
-		this.data = new Array(rows).fill(new Array(columns).fill(defaultValue));
+	constructor(data) {
+		this.data = data;
+	}
+
+	static build(rows, columns, defaultValue) {
+		return new Array(rows).fill(new Array(columns).fill(defaultValue));
 	}
 }
 
