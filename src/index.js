@@ -1,4 +1,5 @@
 const funcs = require("./funcs");
+const is2DArray = require("is-2d-array");
 
 class TwoDimArray {
 	constructor(data) {
@@ -16,7 +17,8 @@ class TwoDimArray {
 
 Object.entries(funcs).forEach(([ name, func ]) => {
 	TwoDimArray.prototype[name] = function(...arguments_) {
-		return func(this.data, ...arguments_);
+		const result = func(this.data, ...arguments_);
+		return is2DArray(result) ? new TwoDimArray(result) : result;
 	};
 });
 

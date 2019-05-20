@@ -15,7 +15,9 @@
 	"description": "Utilities for 2D arrays.",
 	"version": "1.0.0",
 	"main": "./src/index.js",
-	"dependencies": {},
+	"dependencies": {
+		"is-2d-array": "^1.1.1"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/haykam821/2D-Array-Utilities.git"
