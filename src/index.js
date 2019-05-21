@@ -6,6 +6,9 @@ const is2DArray = require("is-2d-array");
  * Methods that return a 2D array can be chained.
  */
 class TwoDimArray {
+	/**
+	 * @param {Array[]} data The data to populate this 2D array with.
+	 */
 	constructor(data) {
 		this.data = data;
 	}
@@ -15,7 +18,7 @@ class TwoDimArray {
 	 * @param {number} rows The amount of rows (vertical, Y) to have.
 	 * @param {number} columns The amount of columns (horizontal, X) to have.
 	 * @param {*} defaultValue The value of each cell.
-	 * @returns {Array[]) The built 2D array.
+	 * @returns {Array[]} The built 2D array.
 	 */
 	static build(rows, columns, defaultValue) {
 		return new Array(rows).fill().map(() => {
