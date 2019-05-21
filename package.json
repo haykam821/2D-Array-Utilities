@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"lint": "eslint \"./**/*.js\"",
-		"docs": "jsdoc ./src --destination ./docs"
+		"docs": "jsdoc ./src --destination ./docs -r"
 	},
 	"name": "2d-array-utilities",
 	"description": "Utilities for 2D arrays.",
