@@ -11,9 +11,10 @@ const set = require("./set.js");
  * @param {(*|function)} value The value or a function called with the coordinates of a cell to be filled that returns a value.
  * @returns {(TwoDimArray|Array[])} The 2D array, with the line filled.
  */
-module.exports = (tda, startX, startY, endX, endY, value) => {
+function fillLine(tda, startX, startY, endX, endY, value) {
 	bresenham(startX, startY, endX, endY, (x, y) => {
 		set(tda, x, y, typeof value === "function" ? value(x, y) : value);
 	});
 	return tda;
-};
+}
+module.exports = fillLine;
