@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Global - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TwoDimArray.html">TwoDimArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TwoDimArray.html#.build">build</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#cells">cells</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fillLine">fillLine</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#set">set</a></span></li>
+</nav>
+
+<div id="main">
+    
     <h1 class="page-title">Global</h1>
+    
 
     
 
@@ -28,7 +41,9 @@
 
 <header>
     
-        <h2></h2>
+        <h2>
+        
+        </h2>
         
     
 </header>
@@ -87,9 +102,7 @@
 
     
 
-    
-
-    
+     
 
     
 
@@ -100,12 +113,11 @@
 
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="cells"><span class="type-signature"></span>cells<span class="signature">(tda)</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
 
     
 
@@ -114,66 +126,6 @@
 <div class="description">
     Gets the number of cells in a 2D array.
 </div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>tda</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
-|
-
-<span class="param-type">Array.&lt;Array></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The 2D array to get the amount of cells of.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
 
 
 
@@ -227,64 +179,6 @@
 
 
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The amount of cells in the 2D array.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fillLine"><span class="type-signature"></span>fillLine<span class="signature">(tda, startX, startY, endX, endY, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Fills all values on the approximation of a line given two endpoints and a value.
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -316,10 +210,10 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
 |
 
-<span class="param-type">Array.&lt;Array></span>
+<span class="param-type"><code>Array.&lt;Array></code></span>
 
 
             
@@ -329,131 +223,72 @@
 
             
 
-            <td class="description last">The 2D array to fill a line in.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>startX</code></td>
-            
-
-            <td class="type">
-            
+            <td class="description last">
+                The 2D array to get the amount of cells of.
                 
-<span class="param-type">number</span>
-
-
-            
             </td>
-
-            
-
-            
-
-            <td class="description last">The X position of the start of the line.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>startY</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The Y position of the start of the line.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>endX</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The X position of the end of the line.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>endY</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The Y position of the end of the line.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>value</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-|
-
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The value or a function called with the coordinates of a cell to be filled that returns a value.</td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>number</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The amount of cells in the 2D array.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fillLine"><span class="type-signature"></span>fillLine<span class="signature">(tda, startX, startY, endX, endY, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Fills all values on the approximation of a line given two endpoints and a value.
+</div>
 
 
 
@@ -507,67 +342,6 @@
 
 
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The 2D array, with the line filled.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
-|
-
-<span class="param-type">Array.&lt;Array></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(tda, column, row)</span><span class="type-signature"> &rarr; {*}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Gets a cell in a 2D array by its coordinates.
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -599,10 +373,10 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
 |
 
-<span class="param-type">Array.&lt;Array></span>
+<span class="param-type"><code>Array.&lt;Array></code></span>
 
 
             
@@ -612,20 +386,23 @@
 
             
 
-            <td class="description last">The 2D array to get a cell's value from.</td>
+            <td class="description last">
+                The 2D array to fill a line in.
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>column</code></td>
+                <td class="name"><code>startX</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -635,20 +412,23 @@
 
             
 
-            <td class="description last">The column (X) of the cell to get the value of.</td>
+            <td class="description last">
+                The X position of the start of the line.
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>row</code></td>
+                <td class="name"><code>startY</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -658,13 +438,156 @@
 
             
 
-            <td class="description last">The row (Y) of the cell to get the value of.</td>
+            <td class="description last">
+                The Y position of the start of the line.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endX</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The X position of the end of the line.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endY</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The Y position of the end of the line.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+|
+
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The value or a function called with the coordinates of a cell to be filled that returns a value.
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+|
+
+<span class="param-type"><code>Array.&lt;Array></code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The 2D array, with the line filled.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(tda, column, row)</span><span class="type-signature"> &rarr; {*}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Gets a cell in a 2D array by its coordinates.
+</div>
 
 
 
@@ -718,64 +641,6 @@
 
 
 
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    The value of the cell.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">*</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(tda, column, row, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Sets the value of a cell in a 2D array.
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -807,10 +672,10 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
 |
 
-<span class="param-type">Array.&lt;Array></span>
+<span class="param-type"><code>Array.&lt;Array></code></span>
 
 
             
@@ -820,7 +685,10 @@
 
             
 
-            <td class="description last">The 2D array to set a cell in.</td>
+            <td class="description last">
+                The 2D array to get a cell's value from.
+                
+            </td>
         </tr>
 
     
@@ -833,7 +701,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -843,7 +711,10 @@
 
             
 
-            <td class="description last">The column (X) of the cell to set the value of.</td>
+            <td class="description last">
+                The column (X) of the cell to get the value of.
+                
+            </td>
         </tr>
 
     
@@ -856,7 +727,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -866,36 +737,72 @@
 
             
 
-            <td class="description last">The row (Y) of the cell to set the value of.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>value</code></td>
-            
-
-            <td class="type">
-            
+            <td class="description last">
+                The row (Y) of the cell to get the value of.
                 
-<span class="param-type">*</span>
-
-
-            
             </td>
-
-            
-
-            
-
-            <td class="description last">The new value of the cell.</td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>*</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    The value of the cell.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(tda, column, row, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Sets the value of a cell in a 2D array.
+</div>
 
 
 
@@ -949,42 +856,182 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tda</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+|
+
+<span class="param-type"><code>Array.&lt;Array></code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The 2D array to set a cell in.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>column</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The column (X) of the cell to set the value of.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The row (Y) of the cell to set the value of.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The new value of the cell.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+<div class="section-returns">
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    The updated 2D array.
-</div>
 
-
-
-<dl>
+<dl class="param-type">
     <dt>
-        Type
+        Type:
     </dt>
     <dd>
         
-<span class="param-type"><a href="TwoDimArray.html">TwoDimArray</a></span>
+<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
 |
 
-<span class="param-type">Array.&lt;Array></span>
+<span class="param-type"><code>Array.&lt;Array></code></span>
 
 
     </dd>
 </dl>
 
+
+<div class="param-desc">
+    The updated 2D array.
+</div>
+
     
+</div>
 
 
 
-
-
+</div>
         
     
 
@@ -1000,17 +1047,13 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="TwoDimArray.html">TwoDimArray</a></li></ul><h3>Global</h3><ul><li><a href="global.html#cells">cells</a></li><li><a href="global.html#fillLine">fillLine</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#set">set</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.2</a> on Wed May 22 2019 02:07:54 GMT+0000 (Coordinated Universal Time)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a> on Wed May 22 2019 14:56:56 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>
