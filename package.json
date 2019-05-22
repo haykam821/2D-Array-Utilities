@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
+		"chai": "^4.2.0",
 		"eslint": "^5.16.0",
 		"eslint-config-haykam": "^1.5.1",
 		"eslint-plugin-extra-rules": "^0.8.1",
@@ -7,7 +8,8 @@
 		"eslint-plugin-json": "^1.4.0",
 		"eslint-plugin-markdown": "^1.0.0-rc.1",
 		"eslint-plugin-unicorn": "^8.0.2",
-		"jsdoc": "^3.6.2"
+		"jsdoc": "^3.6.2",
+		"mocha": "^6.1.4"
 	},
 	"scripts": {
 		"test": "mocha test.js",
