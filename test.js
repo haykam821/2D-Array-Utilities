@@ -35,5 +35,5 @@ function testFunction([ name, func ]) {
 }
 
 describe("2D array functions", function() {
-	Object.entries(funcs.forEach(testFunction));
+	Object.entries(funcs).forEach(testFunction);
 });
