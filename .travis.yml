@@ -4,6 +4,7 @@ node_js:
 before_script: npm install --only=dev
 script:
   - npm run lint
+  - npm test
   - npm run docs
 deploy:
   provider: pages
