@@ -5,7 +5,7 @@ const assert = chai.assert;
 
 const funcs = require("./src/funcs");
 
-const testTwoDimArray = [
+const testGrid = [
 	[ 1, 2, 3, 4, 5 ],
 	[ 6, 7, 8, 9, 10 ],
 	[ 11, 12, 13, 14, 15 ],
@@ -21,7 +21,7 @@ const funcTests = {
 };
 
 /**
- * Tests a given 2D array function.
+ * Tests a given grid function.
  * @param {string} name The name of the function.
  * @param {function} func The function.
  */
@@ -30,10 +30,10 @@ function testFunction([ name, func ]) {
 
 	it(name, function() {
 		const test = funcTests[name];
-		assert.equal(func(testTwoDimArray, ...test.params), test.assertToEqual);
+		assert.equal(func(testGrid, ...test.params), test.assertToEqual);
 	});
 }
 
-describe("2D array functions", function() {
+describe("Grid functions", function() {
 	Object.entries(funcs).forEach(testFunction);
 });

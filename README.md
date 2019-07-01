@@ -5,3 +5,8 @@
 [![Travis (.com)](https://img.shields.io/travis/com/haykam821/2D-Array-Utilities.svg?style=popout)](https://travis-ci.com/haykam821/2D-Array-Utilities)
 
 Utilities for 2D arrays.
+
+## Terminology
+
+* **grid** - 2D array
+* **cell** - A single position on a grid
