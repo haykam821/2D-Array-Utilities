@@ -24,7 +24,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TwoDimArray.html">TwoDimArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TwoDimArray.html#.build">build</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#cells">cells</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fillLine">fillLine</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#set">set</a></span></li>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Grid.html">Grid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#.build">build</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#cells">cells</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fillLine">fillLine</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#set">set</a></span></li>
 </nav>
 
 <div id="main">
@@ -117,14 +117,14 @@
 
     
 
-    <h4 class="name" id="cells"><span class="type-signature"></span>cells<span class="signature">(tda)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="cells"><span class="type-signature"></span>cells<span class="signature">(grid)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
 
 
 
 <div class="description">
-    Gets the number of cells in a 2D array.
+    Gets the number of cells in a grid.
 </div>
 
 
@@ -204,13 +204,13 @@
 
         <tr>
             
-                <td class="name"><code>tda</code></td>
+                <td class="name"><code>grid</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -224,7 +224,7 @@
             
 
             <td class="description last">
-                The 2D array to get the amount of cells of.
+                The grid to get the amount of cells of.
                 
             </td>
         </tr>
@@ -265,7 +265,7 @@
 
 
 <div class="param-desc">
-    The amount of cells in the 2D array.
+    The amount of cells in the grid.
 </div>
 
     
@@ -280,7 +280,7 @@
 
     
 
-    <h4 class="name" id="fillLine"><span class="type-signature"></span>fillLine<span class="signature">(tda, startX, startY, endX, endY, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
+    <h4 class="name" id="fillLine"><span class="type-signature"></span>fillLine<span class="signature">(grid, startX, startY, endX, endY, value)</span><span class="type-signature"> &rarr; {<a href="Grid.html">Grid</a>|Array.&lt;Array>}</span></h4>
 
     
 
@@ -367,13 +367,13 @@
 
         <tr>
             
-                <td class="name"><code>tda</code></td>
+                <td class="name"><code>grid</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -387,7 +387,7 @@
             
 
             <td class="description last">
-                The 2D array to fill a line in.
+                The grif to fill a line in.
                 
             </td>
         </tr>
@@ -553,7 +553,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -564,7 +564,7 @@
 
 
 <div class="param-desc">
-    The 2D array, with the line filled.
+    The grid, with the line filled.
 </div>
 
     
@@ -579,14 +579,178 @@
 
     
 
-    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(tda, column, row)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    <h4 class="name" id="forEach"><span class="type-signature"></span>forEach<span class="signature">(grid, callback)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Gets a cell in a 2D array by its coordinates.
+    Iterates over every cell in a grid.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="funcs_for-each.js.html">funcs/for-each.js</a>, <a href="funcs_for-each.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>grid</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
+|
+
+<span class="param-type"><code>Array.&lt;Array></code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The grid to iterate.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                A function to execute on each cell, which is passed the cell value, X position, Y position, and grid respectively.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(grid, column, row)</span><span class="type-signature"> &rarr; {*}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Gets a cell in a grid by its coordinates.
 </div>
 
 
@@ -666,13 +830,13 @@
 
         <tr>
             
-                <td class="name"><code>tda</code></td>
+                <td class="name"><code>grid</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -686,7 +850,7 @@
             
 
             <td class="description last">
-                The 2D array to get a cell's value from.
+                The grid to get a cell's value from.
                 
             </td>
         </tr>
@@ -794,14 +958,14 @@
 
     
 
-    <h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(tda, column, row, value)</span><span class="type-signature"> &rarr; {<a href="TwoDimArray.html">TwoDimArray</a>|Array.&lt;Array>}</span></h4>
+    <h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(grid, column, row, value)</span><span class="type-signature"> &rarr; {<a href="Grid.html">Grid</a>|Array.&lt;Array>}</span></h4>
 
     
 
 
 
 <div class="description">
-    Sets the value of a cell in a 2D array.
+    Sets the value of a cell in a grid.
 </div>
 
 
@@ -881,13 +1045,13 @@
 
         <tr>
             
-                <td class="name"><code>tda</code></td>
+                <td class="name"><code>grid</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -901,7 +1065,7 @@
             
 
             <td class="description last">
-                The 2D array to set a cell in.
+                The grid to set a cell in.
                 
             </td>
         </tr>
@@ -1012,7 +1176,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><code><a href="TwoDimArray.html">TwoDimArray</a></code></span>
+<span class="param-type"><code><a href="Grid.html">Grid</a></code></span>
 |
 
 <span class="param-type"><code>Array.&lt;Array></code></span>
@@ -1023,7 +1187,7 @@
 
 
 <div class="param-desc">
-    The updated 2D array.
+    The updated grid.
 </div>
 
     
@@ -1050,7 +1214,7 @@
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a> on Mon Jul 01 2019 02:13:46 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Wed Jul 17 2019 18:21:37 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
