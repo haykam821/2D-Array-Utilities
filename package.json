@@ -10,10 +10,11 @@
 		"eslint-plugin-unicorn": "^8.0.2",
 		"jsdoc": "^3.6.2",
 		"minami": "^1.2.3",
-		"mocha": "^6.1.4"
+		"mocha": "^6.1.4",
+		"require-all": "^3.0.0"
 	},
 	"scripts": {
-		"test": "mocha test.js",
+		"test": "mocha ./tests/test.js",
 		"lint": "eslint \"./**/*.js\"",
 		"docs": "jsdoc ./src --destination ./docs -r -t node_modules/minami"
 	},
