@@ -6,6 +6,6 @@
  * @returns {*} The value of the cell.
  */
 function get(grid, column, row) {
-	return Grid[row][column];
+	return grid[row][column];
 }
 module.exports = get;

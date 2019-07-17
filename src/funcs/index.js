@@ -47,6 +47,7 @@ module.exports = {
 	flip: null,
 	forArea: null,
 	forColumn: null,
+	forEach: require("./for-each.js"),
 	forRow: null,
 	fromArray: null,
 	fromCanvas: null,
