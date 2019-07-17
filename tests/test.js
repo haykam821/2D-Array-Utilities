@@ -1,7 +1,8 @@
 const chai = require("chai");
 const assert = chai.assert;
 
-const funcTests = require("require-all")(__dirname + "/funcs");
+const path = require("path");
+const funcTests = require("require-all")(path.resolve(__dirname, "./funcs"));
 
 describe("funcs", () => {
 	Object.entries(funcTests).forEach(([key, test]) => {
